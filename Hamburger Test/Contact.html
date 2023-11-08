@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topsail Beach Contact</title>
+    <link rel="shortcut icon" type="image/png" href="Images/TopSailBeachUmbrella.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Top Navigation Menu -->
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <a href="Hamburger.html">
+                <img src="Images/logo-no-background.png" alt="Logo" style="height: 50px;">
+                </a>
+            </div>
+                <a href="Hamburger.html" class="active">
+                    <img src="Images/TopSailBeachUmbrella.png" alt="TSB Logo" style="height: 30px;">
+                </a>
+                <a href="News.html">News</a>
+                <a href="Visitors.html">Visitors</a>
+                <a href="About.html">About</a>
+            </div>
+        </div>  
+    <!-- Main Content -->
+    <div class="content">
+        <div class="WaveLogos">
+            <img src="Images/topsail-beach-waves-black.png" alt="Logo 1" style="height: 100px;">
+            <h2>Contacts</h2>
+            <img src="Images/topsail-beach-waves-black.png" alt="Logo 2" style="height: 100px;">
+        </div>
+        <section class="grid-section">
+            <div class="contact-section">
+                <!-- Contact section -->
+                <h2>We value your feedback!</h2>
+                <p>Whether you have questions or want to share your thoughts about our beloved beach town, we're here to listen and assist you in any way we can.</p>
+                <form method="post" enctype="text/plain">
+                    <label for="name">First and Last Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label class="radio-inline"><input type="radio" name="gender" value="He/Him">He/Him</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="She/Her">She/Her</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="They/Them">They/Them</label><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="message">Comment/Question:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+            </div>
+        <p>Thank you for submitting your feedback, we very much appreciate  it! Follow us on our socials down below!</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/townoftopsailbeach/" target="_blank"><img src="Images/facebook.png" alt="Facebook" style="height: 100px;"></a>
+            <a href="https://twitter.com/townoftopsail" target="_blank"><img src="Images/twitter.png" alt="Twitter" style="height: 100px;"></a>
+        </div>        
+        </section>
+    </div>
+    <!-- Footer section -->
+    <div class="bottomnav">
+        <img src="Images/TopSailBeachUmbrella.png" alt="Logo" style="height: 35px;">
+        <a href="Contact.html" class="contact-button">Contact us!</a>
+        <img src="Images/TopSailBeachUmbrella.png" alt="Logo" style="height: 35px;">
+        <div class="footer-info">
+            <p>© Copyright 2023. All Rights Reserved.</p>
+            <p>S. Anderson Blvd., Topsail Beach, NC 28445</p>
+        </div>
+    </div>
+        <script>
+                // Prevent form submission if there are invalid fields
+                if (!isValid) {
+                    e.preventDefault();
+                }
+                function validateEmail(email) {
+                    var re = /\S+@\S+\.\S+/;
+                    return re.test(email);
+                }
+        </script>        
+    </body>
+</html>
